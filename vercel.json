@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "blood_app/wsgi.py",
+        "src": "Blood_Bank/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "blood_app/wsgi.py"
+            "dest": "Blood_Bank/wsgi.py"
         }
     ]
 }
